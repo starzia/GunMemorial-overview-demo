@@ -121,6 +121,9 @@ table{
   text-align: center;
   border-spacing:0;
 }
+td:even{
+  background:#eee;
+}
 div.lane-divider{
   height:100%;
   background:white;
