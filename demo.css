@@ -116,3 +116,13 @@ div.calendar{
   0% {top:-5000px;}
   100% {top:0px;}
 }
+
+table{
+  text-align: center;
+  border-spacing:0;
+}
+div.lane-divider{
+  height:100%;
+  background:white;
+  width:4px;
+}
