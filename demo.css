@@ -10,10 +10,15 @@ h3{
   margin-top:50px;
 }
 div.road{
+  background: #444;
   font-size:0; /* for zero space between inline divs */
-  width:1000px;
   height:400px;
   overflow:hidden;
+}
+div.unknown-lane{
+  width:98px;
+  border-right: dashed yellow 2px;
+  height:100%;
 }
 div.lane{
   width: 100px;
@@ -89,6 +94,7 @@ div.lane:nth-child(8){
 }
 
 div.calendar-lane{
+  background: white;
   width: 100px;
   height:100%;
   overflow:hidden;
