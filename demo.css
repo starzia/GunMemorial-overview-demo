@@ -1,26 +1,30 @@
 body{
-  font-size:0; /* for zero space between inline divs */
+  font-family:sans-serif;
 }
 div{
   margin:0;
   padding:0;
   display: inline-block;
 }
+h3{
+  margin-top:50px;
+}
 div.road{
-  width:800px;
+  font-size:0; /* for zero space between inline divs */
+  width:1000px;
   height:400px;
+  overflow:hidden;
 }
 div.lane{
-  overflow: hidden;
   width: 100px;
   height:100%;
   background-image:url(lane.jpg);
   background-size:100px 15000px;
   background-repeat: repeat-y;
   background-position:top;
-  -webkit-animation-timing-function: linear;
   -webkit-animation-duration: 60s;
   -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
 }
 div.lane:nth-child(1){
   -webkit-animation-name: vert-scroll-1;
@@ -82,4 +86,23 @@ div.lane:nth-child(8){
 @-webkit-keyframes vert-scroll-8 {
   0% {background-position: 0px 7000px;}
   100% {background-position: 0px 21000px;}
+}
+
+div.calendar-lane{
+  width: 100px;
+  height:100%;
+  overflow:hidden;
+}
+div.calendar{
+  font-size:12pt;
+  padding: 5px;
+  position:relative;
+  -webkit-animation: calendar-anim 25s linear infinite;
+}
+.calendar p{
+  margin-top:250px;
+}
+@-webkit-keyframes calendar-anim {
+  0% {top:-5000px;}
+  100% {top:0px;}
 }
