@@ -1,0 +1,85 @@
+body{
+  font-size:0; /* for zero space between inline divs */
+}
+div{
+  margin:0;
+  padding:0;
+  display: inline-block;
+}
+div.road{
+  width:800px;
+  height:400px;
+}
+div.lane{
+  overflow: hidden;
+  width: 100px;
+  height:100%;
+  background-image:url(lane.jpg);
+  background-size:100px 15000px;
+  background-repeat: repeat-y;
+  background-position:top;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-duration: 60s;
+  -webkit-animation-iteration-count: infinite;
+}
+div.lane:nth-child(1){
+  -webkit-animation-name: vert-scroll-1;
+}
+div.lane:nth-child(2){
+  -webkit-animation-name: vert-scroll-2;
+  -webkit-animation-duration: 61s;
+}
+div.lane:nth-child(3){
+  -webkit-animation-name: vert-scroll-3;
+}
+div.lane:nth-child(4){
+  -webkit-animation-name: vert-scroll-4;
+  -webkit-animation-duration: 59s;
+}
+div.lane:nth-child(5){
+  -webkit-animation-name: vert-scroll-5;
+}
+div.lane:nth-child(6){
+  -webkit-animation-name: vert-scroll-6;
+  -webkit-animation-duration: 62s;
+}
+div.lane:nth-child(7){
+  -webkit-animation-name: vert-scroll-7;
+  -webkit-animation-duration: 58s;
+}
+div.lane:nth-child(8){
+  -webkit-animation-name: vert-scroll-8;
+}
+
+@-webkit-keyframes vert-scroll-1 {
+  0% {background-position: 0px 0px;}
+  100% {background-position: 0px 15000px;}
+}
+@-webkit-keyframes vert-scroll-2 {
+  0% {background-position: 0px 1000px;}
+  100% {background-position: 0px 16000px;}
+}
+@-webkit-keyframes vert-scroll-3 {
+  0% {background-position: 0px 2000px;}
+  100% {background-position: 0px 17000px;}
+}
+@-webkit-keyframes vert-scroll-4 {
+  0% {background-position: 0px 3000px;}
+  100% {background-position: 0px 18000px;}
+}
+@-webkit-keyframes vert-scroll-5 {
+  0% {background-position: 0px 4000px;}
+  100% {background-position: 0px 18000px;}
+}
+@-webkit-keyframes vert-scroll-6 {
+  0% {background-position: 0px 5000px;}
+  100% {background-position: 0px 19000px;}
+}
+@-webkit-keyframes vert-scroll-7 {
+  0% {background-position: 0px 6000px;}
+  100% {background-position: 0px 20000px;}
+}
+@-webkit-keyframes vert-scroll-8 {
+  0% {background-position: 0px 7000px;}
+  100% {background-position: 0px 21000px;}
+}
