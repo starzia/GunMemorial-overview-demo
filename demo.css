@@ -16,8 +16,8 @@ div.road{
   overflow:hidden;
 }
 div.unknown-lane{
-  width:98px;
-  border-right: dashed yellow 2px;
+  width:24px;
+  border-right: dashed yellow 1px;
   height:100%;
 }
 div.lane{
@@ -31,32 +31,36 @@ div.lane{
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
-div.lane:nth-child(1){
+div.road-zoomout div.lane{
+  width:25px;
+  background-size:25px 3750px;
+}
+div.lane:nth-child(8n+1){
   -webkit-animation-name: vert-scroll-1;
 }
-div.lane:nth-child(2){
+div.lane:nth-child(8n+2){
   -webkit-animation-name: vert-scroll-2;
   -webkit-animation-duration: 61s;
 }
-div.lane:nth-child(3){
+div.lane:nth-child(8n+3){
   -webkit-animation-name: vert-scroll-3;
 }
-div.lane:nth-child(4){
+div.lane:nth-child(8n+4){
   -webkit-animation-name: vert-scroll-4;
   -webkit-animation-duration: 59s;
 }
-div.lane:nth-child(5){
+div.lane:nth-child(8n+5){
   -webkit-animation-name: vert-scroll-5;
 }
-div.lane:nth-child(6){
+div.lane:nth-child(8n+6){
   -webkit-animation-name: vert-scroll-6;
   -webkit-animation-duration: 62s;
 }
-div.lane:nth-child(7){
+div.lane:nth-child(8n+7){
   -webkit-animation-name: vert-scroll-7;
   -webkit-animation-duration: 58s;
 }
-div.lane:nth-child(8){
+div.lane:nth-child(8n+8){
   -webkit-animation-name: vert-scroll-8;
 }
 
