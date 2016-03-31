@@ -111,6 +111,7 @@ div.calendar{
 }
 .calendar p{
   margin-top:250px;
+  font-weight: bold;
 }
 @-webkit-keyframes calendar-anim {
   0% {top:-5000px;}
@@ -121,11 +122,11 @@ table{
   text-align: center;
   border-spacing:0;
 }
-td:even{
+td:nth-child(even){
   background:#eee;
 }
 div.lane-divider{
   height:100%;
   background:white;
-  width:4px;
+  width:2px;
 }
